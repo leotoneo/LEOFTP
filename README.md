@@ -19,7 +19,7 @@
 
 1.对源代码直接make前，需修改配置文件（leoftp.conf）中的listen_address配置项将其修改成本机的ip。
 
-2.因为源代码中控制连接中绑定的是20端口，如果本机中运行了vsftp，运行此程序需暂定本机的vdftpd服务，
+2.因为源代码中控制连接中绑定的是20端口，如果本机中运行了vsftp，运行此程序需暂停本机的vdftpd服务，
 可以使用一下命令：service vsftpd stop 或kill掉。也可以修改源代码中绑定的端口。
 
 3.一定要用root权限运行（sudo ./leoftp）,一定要用root权限运行,一定要用root权限运行.重要的事情说三遍，说三遍，说三遍
