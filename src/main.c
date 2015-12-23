@@ -27,7 +27,7 @@ int main(void)
 {
 	
 	parseconf_load_file(LEOFTP_CONF);
-	daemon(0, 0);
+	daemon(0, 1);
 
 	printf("tunable_pasv_enable=%d\n", tunable_pasv_enable);
 	printf("tunable_port_enable=%d\n", tunable_port_enable);
